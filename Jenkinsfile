@@ -1,3 +1,4 @@
+USER root
 node {
     def app
 
@@ -10,7 +11,7 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-        app = sudo docker.build("sudipta007/jboss-docker")
+        app = docker.build("sudipta007/jboss-docker")
     }
 
     stage('Test image') {
