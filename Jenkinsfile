@@ -1,4 +1,4 @@
-USER root
+sudo su - 
 node {
     def app
 
