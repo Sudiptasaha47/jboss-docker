@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-        app = sudo docker.build("jboss/wildfly-admin")
+        app = docker.build("jboss/wildfly-admin")
     }
 
     stage('Test image') {
