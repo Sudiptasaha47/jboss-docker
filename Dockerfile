@@ -1,3 +1,4 @@
+USER root
 # Use latest jboss/base-jdk:8 image as the base
 FROM jboss/base-jdk:8
 
