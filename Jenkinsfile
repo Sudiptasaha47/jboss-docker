@@ -1,3 +1,6 @@
+#/bin/bash
+sudo su -
+
 node {
     def app
 
@@ -10,7 +13,7 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-        app = docker.build("sudipta007/jboss-docker1")
+        app = docker.build("jboss/wildfly-admin")
     }
 
     stage('Test image') {
