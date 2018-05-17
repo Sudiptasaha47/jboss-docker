@@ -1,4 +1,3 @@
-sudo su - 
 node {
     def app
 
