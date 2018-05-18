@@ -36,11 +36,7 @@ node {
    stage('Deploy image') {
        AWS_SECRET = AKIAJCW3GX2MXFOWJOTA
        AWS_REGION = OJayIXfogAjCD6G/bM+ydj93lO8lRx3rdP6ilf/J
-       CLUSTER_NAME = default
-       SERVICE_NAME = sample-webapp
-       DOCKER_IMAGE_NAME = sudipta007/jboss-docker:latest
-       
-       sh ecs-deploy -k $AWS_KEY -s $AWS_SECRET -r $AWS_REGION -c $CLUSTER_NAME -n $SERVICE_NAME -i $DOCKER_IMAGE_NAME
+       sh ecs-deploy -k $AWS_KEY -s $AWS_SECRET -r $AWS_REGION -c default -n sample-webapp -i sudipta007/jboss-docker:latest
        
    }
     
